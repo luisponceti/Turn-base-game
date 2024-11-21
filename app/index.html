@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Wild West Avengers</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+
+  </head>
+  <body>
+
+
+    <div class="container">
+      <h1 class="game-title">Wild West Avengers</h1>
+      <h2 class="message"></h2>
+
+      <div class="game-display">
+
+          <div class="row players">
+            <div class="col-xs-6 hero">
+              <div class="hero-container">
+    <!--hero template goes here -->
+              </div>
+            </div>
+            <div class="col-xs-6 villain">
+              <div class="villain-container">
+                <h2 class="villain-name"></h2>
+                <img id="villain-pic" src="" alt="">
+    <!--villain template goes here -->
+              </div>
+            </div>
+          </div>
+          <div class="row players-stats">
+            <div class="col-xs-6">
+              <div class="health-container"><span>Hero: </span><span class="hero-health health-counter">30</span></div>
+              <!-- <div class="health-bar"><div class="total-health"></div></div> -->
+            </div>
+            <div class="col-xs-6">
+              <div class="health-container"><span>Villain: </span><span class="health-counter" id="villain-health">30</span></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <button type="button" class="fire-button" name="button">FIRE</button>
+              <!-- <div class="colt"><img src="./images/Colt-Peacemaker1.png" alt=""></div> -->
+            </div>
+          </div>
+      </div>
+      <audio id="gun-shot" src="sounds/GUN_FIRE-GoodSoundForYou-820112263.mp3"></audio>
+      <audio id="gun-shot-2" src="sounds/barreta_m9-Dion_Stapper-1010051237.mp3"></audio>
+    </div>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
